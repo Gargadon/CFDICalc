@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Acerca</class>
+ <widget class="QDialog" name="Acerca">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>394</width>
+    <height>279</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Acerca de CFDICalc</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/mister_chispa.png</normaloff>:/mister_chispa.png</iconset>
+  </property>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>371</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;CFDICalc es una calculadora que suma Comprobantes Fiscales Digitales por Internet (o CFDIs). Elige los XML y en automático verás el total y subtotal de la suma de tus facturas. Puedes incluso filtrar los resultados por Catálogo de Uso de Comprobantes en caso de que necesites saber en qué rubro gastas más.&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;CFDICalc es ideal para micronegocios ya que permite llevar una contabilidad de gastos de una manera fácil y sencilla.&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Importante:&lt;/span&gt; CFDICalc no verifica la firma digital de los CFDI ante el SAT. Si necesitas verificar la firma digital, CFDICalc no es para ti. CFDICalc asume que tus compras fueron hechas en pesos mexicanos (MXN).&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;¿Te fue útil mi programa? Es gratuito y lo he hecho ante una necesidad, pero llevó tiempo y esfuerzo realizarlo. Si gustas, puedes contribuir a que este programa sirva a más personas.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="paypal">
+   <property name="geometry">
+    <rect>
+     <x>115</x>
+     <y>220</y>
+     <width>121</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Dona vía PayPal</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="myweb">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>220</y>
+     <width>121</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Visitar mi sitio web</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>84</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

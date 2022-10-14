@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>239</width>
+    <height>172</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>CFDICalc</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/mister_chispa.png</normaloff>:/mister_chispa.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Total</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Subtotal</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="totalDisplay">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>20</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="subtotalDisplay">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>50</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>239</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archi&amp;vo</string>
+    </property>
+    <addaction name="actionAbrir_CFDI"/>
+    <addaction name="actionAcerca_de"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuFiltrar">
+    <property name="title">
+     <string>Filtrar</string>
+    </property>
+    <addaction name="actionG01_Adquisici_n_de_mercanc_as"/>
+    <addaction name="actionG02_Devoluciones_descuentos_o_bonificaciones"/>
+    <addaction name="actionG03_Gastos_en_general"/>
+    <addaction name="actionI01_Construcciones"/>
+    <addaction name="actionI02_Mobiliario_y_equipo_de_oficina_por_inversiones"/>
+    <addaction name="actionI03_Equipo_de_transporte"/>
+    <addaction name="actionI04_Equipo_de_c_mputo_y_accesorios"/>
+    <addaction name="actionI05_Dados_troqueles_moldes_matrices_y_herramental"/>
+    <addaction name="actionI06_Comunicaciones_telef_nicas"/>
+    <addaction name="actionI07_Comunicaciones_satelitales"/>
+    <addaction name="actionI08_Otra_maquinaria_y_equipo"/>
+    <addaction name="actionD01_Honorarios_m_dicos_dentales_y_gastos_hospitalarios"/>
+    <addaction name="actionD02_Gastos_m_dicos_por_incapacidad_o_discapacidad"/>
+    <addaction name="actionD03_Gastos_funerales"/>
+    <addaction name="actionD04_Donativos"/>
+    <addaction name="actionD05_Intereses_reales_efectivamente_pagados_por_cr_ditos_hipotecarios_casahabitaci_n"/>
+    <addaction name="actionD06_Aportaciones_voluntarias_al_SAR"/>
+    <addaction name="actionD07_Primas_por_seguros_de_gastos_m_dicos"/>
+    <addaction name="actionD08_Gastos_de_transportaci_n_escolar_obligatoria"/>
+    <addaction name="actionD09_Dep_sitos_en_cuentas_para_el_ahorro_primas_que_tengan_como_base_planes_de_pensiones"/>
+    <addaction name="actionD10_Pagos_por_servicios_educativos_colegiaturas"/>
+    <addaction name="actionP01_Por_definir"/>
+    <addaction name="actionTodos"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuFiltrar"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAbrir_CFDI">
+   <property name="text">
+    <string>Abrir CFDI...</string>
+   </property>
+  </action>
+  <action name="actionG01_Adquisici_n_de_mercanc_as">
+   <property name="text">
+    <string>G01 Adquisición de mercancías</string>
+   </property>
+  </action>
+  <action name="actionG02_Devoluciones_descuentos_o_bonificaciones">
+   <property name="text">
+    <string>G02 Devoluciones, descuentos o bonificaciones</string>
+   </property>
+  </action>
+  <action name="actionG03_Gastos_en_general">
+   <property name="text">
+    <string>G03 Gastos en general</string>
+   </property>
+  </action>
+  <action name="actionTodos">
+   <property name="text">
+    <string>Todos</string>
+   </property>
+  </action>
+  <action name="actionAcerca_de">
+   <property name="text">
+    <string>Acerca de...</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionI01_Construcciones">
+   <property name="text">
+    <string>I01 Construcciones</string>
+   </property>
+  </action>
+  <action name="actionI02_Mobiliario_y_equipo_de_oficina_por_inversiones">
+   <property name="text">
+    <string>I02 Mobiliario y equipo de oficina por inversiones</string>
+   </property>
+  </action>
+  <action name="actionI03_Equipo_de_transporte">
+   <property name="text">
+    <string>I03 Equipo de transporte</string>
+   </property>
+  </action>
+  <action name="actionI04_Equipo_de_c_mputo_y_accesorios">
+   <property name="text">
+    <string>I04 Equipo de cómputo y accesorios</string>
+   </property>
+  </action>
+  <action name="actionI05_Dados_troqueles_moldes_matrices_y_herramental">
+   <property name="text">
+    <string>I05 Dados, troqueles, moldes, matrices y herramental</string>
+   </property>
+  </action>
+  <action name="actionI06_Comunicaciones_telef_nicas">
+   <property name="text">
+    <string>I06 Comunicaciones telefónicas</string>
+   </property>
+  </action>
+  <action name="actionI07_Comunicaciones_satelitales">
+   <property name="text">
+    <string>I07 Comunicaciones satelitales</string>
+   </property>
+  </action>
+  <action name="actionI08_Otra_maquinaria_y_equipo">
+   <property name="text">
+    <string>I08 Otra maquinaria y equipo</string>
+   </property>
+  </action>
+  <action name="actionD01_Honorarios_m_dicos_dentales_y_gastos_hospitalarios">
+   <property name="text">
+    <string>D01 Honorarios médicos, dentales y gastos hospitalarios</string>
+   </property>
+  </action>
+  <action name="actionD02_Gastos_m_dicos_por_incapacidad_o_discapacidad">
+   <property name="text">
+    <string>D02 Gastos médicos por incapacidad o discapacidad</string>
+   </property>
+  </action>
+  <action name="actionD03_Gastos_funerales">
+   <property name="text">
+    <string>D03 Gastos funerales</string>
+   </property>
+  </action>
+  <action name="actionD04_Donativos">
+   <property name="text">
+    <string>D04 Donativos</string>
+   </property>
+  </action>
+  <action name="actionD05_Intereses_reales_efectivamente_pagados_por_cr_ditos_hipotecarios_casahabitaci_n">
+   <property name="text">
+    <string>D05 Intereses reales efectivamente pagados por créditos hipotecarios (casahabitación)</string>
+   </property>
+  </action>
+  <action name="actionD06_Aportaciones_voluntarias_al_SAR">
+   <property name="text">
+    <string>D06 Aportaciones voluntarias al SAR</string>
+   </property>
+  </action>
+  <action name="actionD07_Primas_por_seguros_de_gastos_m_dicos">
+   <property name="text">
+    <string>D07 Primas por seguros de gastos médicos</string>
+   </property>
+  </action>
+  <action name="actionD08_Gastos_de_transportaci_n_escolar_obligatoria">
+   <property name="text">
+    <string>D08 Gastos de transportación escolar obligatoria</string>
+   </property>
+  </action>
+  <action name="actionD09_Dep_sitos_en_cuentas_para_el_ahorro_primas_que_tengan_como_base_planes_de_pensiones">
+   <property name="text">
+    <string>D09 Depósitos en cuentas para el ahorro, primas que tengan como base planes de pensiones</string>
+   </property>
+  </action>
+  <action name="actionD10_Pagos_por_servicios_educativos_colegiaturas">
+   <property name="text">
+    <string>D10 Pagos por servicios educativos (colegiaturas)</string>
+   </property>
+  </action>
+  <action name="actionP01_Por_definir">
+   <property name="text">
+    <string>P01 Por definir</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
