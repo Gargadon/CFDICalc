@@ -6,11 +6,11 @@
 
 QT       += core gui xml
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 5): QT += widgets
 
 TARGET = CFDICalc
 TEMPLATE = app
-VERSION = 1.1.0
+VERSION = 2.0.0
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -41,3 +41,5 @@ DISTFILES +=
 
 RESOURCES += \
     resources.qrc
+
+RC_ICONS = musashi_mochi_vvM_icon.ico
