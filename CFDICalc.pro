@@ -10,7 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 5): QT += widgets
 
 TARGET = CFDICalc
 TEMPLATE = app
-VERSION = 2.0.0
+VERSION = 2.0.1
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
@@ -42,4 +42,7 @@ DISTFILES +=
 RESOURCES += \
     resources.qrc
 
-RC_ICONS = musashi_mochi_vvM_icon.ico
+win32 {
+    LIBS += -lws2_32
+    RC_ICONS = musashi_mochi_vvM_icon.ico
+}
